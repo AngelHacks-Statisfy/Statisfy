@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".activity.DashActivity"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:id="@+id/header_metrics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:elevation="2pt"
+        android:layout_weight="4.7">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/steps"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="30,214"
+                    android:textSize="30dp"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Steps Taken"
+                    android:textSize="12dp"
+                    android:textColor="@color/dark_gray"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/dark_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0.003"
+                    android:textSize="30dp"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Miles Walked"
+                    android:textSize="12dp"
+                    android:textColor="@color/dark_gray"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/dark_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/kcal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="1,043"
+                    android:textSize="30dp"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Kcal Burned"
+                    android:textSize="12dp"
+                    android:textColor="@color/dark_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/gray">
+
+        <LinearLayout
+            android:id="@+id/content_header"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5px"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/dark_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Recent Meals"
+                    android:gravity="center"
+                    android:textSize="7pt"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/dark_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5px"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/dark_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/meal_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
