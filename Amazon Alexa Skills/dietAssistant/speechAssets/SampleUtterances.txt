@@ -1,0 +1,8 @@
+WhatIsNutritionValueIntent can you tell me what should I eat
+CalorieValueIntent what is the calorie value
+FatValueIntent can you tell me the fat content
+LastItemIntent I forgot the last item I searched
+ItemValueIntent {ItemName}
+ConfirmLastProductIntent yes please can you let me know
+PokitDokProviderIntent can you tell me the best dietician in the area
+GoodByeIntent Bye

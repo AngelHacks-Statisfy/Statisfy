@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "intent": "ItemValueIntent",
+      "slots": [
+        {
+          "name": "ItemName",
+          "type": "ITEM_LIST"
+        }
+      ]
+    },
+    {
+      "intent": "WhatIsNutritionValueIntent"
+    },
+    {
+      "intent": "CalorieValueIntent"
+    },
+    {
+      "intent": "FatValueIntent"
+    },
+    {
+      "intent": "LastItemIntent"
+    },
+    {
+      "intent": "ConfirmLastProductIntent"
+    },
+    {
+      "intent": "PokitDokProviderIntent"
+    },
+    {
+      "intent": "GoodByeIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}
