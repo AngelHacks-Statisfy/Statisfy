@@ -1,0 +1,16 @@
+ENV:
+  PORT: '8080'
+  HOST: '0.0.0.0'
+
+AWS_CONFIG:
+  accessKeyId: 'AK************4Q'
+  secretAccessKey: 'nw******************W6X'
+  bucket_name: 'angel-hacks'
+  region: 'us-east-1'
+
+DYNAMODB_CONFIG:
+  ruleTableName:   'prod_rules'
+
+POKITDOK_CONFIG:
+  POKITDOK_CLIENT_ID: 'sq***************yR94'
+  POKITDOK_CLIENT_SECRET: 'Cfjb*****************oD1wA'
